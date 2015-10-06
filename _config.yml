@@ -1,0 +1,6 @@
+permalink: /:categories/:year-:month-:day/:title
+author:
+    name: kuelgu
+    email: kuelgu@gmail.com
+
+markdown: rdiscount
