@@ -4,5 +4,5 @@ author:
     email: kuelgu@gmail.com
 
 markdown: kramdown
-auto:true
-server:true
+auto: true
+server: true
