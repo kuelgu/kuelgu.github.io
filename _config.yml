@@ -3,4 +3,6 @@ author:
     name: kuelgu
     email: kuelgu@gmail.com
 
-markdown: rdiscount
+markdown: kramdown
+auto:true
+server:true
