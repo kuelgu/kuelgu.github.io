@@ -3,7 +3,6 @@ layout: layout
 title: kuelgu's github
 ---
 # now printing
-
 <ul>
 {% for post in site.posts %}
   <li>
@@ -11,6 +10,5 @@ title: kuelgu's github
   </li>
 {% endfor %}
 </ul>
-
 
 **Copyright © {{ site.author.name }} 2012 All rights reserved. Please contact to {{ site.author.email }}.**
