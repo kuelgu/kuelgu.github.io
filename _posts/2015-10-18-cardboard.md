@@ -48,6 +48,8 @@ iPhoneの設定→一般→プロファイル
 
 実機表示はできた
 
+{:refdef: #img}
 ![demo](/assets/images/IMG_1868.PNG)
+{:refdef:}
 
 とりあえずここまで。モデル作んないと続きができないので次はモデル作成をば。
