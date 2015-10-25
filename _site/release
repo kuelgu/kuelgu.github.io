@@ -2,5 +2,5 @@
 
 jekyll b
 git add -A
-git commit -a -m "new diary"
+git commit -m "new diary"
 git push
