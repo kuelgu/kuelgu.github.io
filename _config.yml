@@ -22,7 +22,7 @@ github: kuelgu
 
 # Google Analytics (you may want to changes these with yours or even delete :)
 
-#ga_domain: kuelgu.github.io
+ga_domain: kuelgu.github.io
 ga_tracking_id: UA-69264036-1
 
 # Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
