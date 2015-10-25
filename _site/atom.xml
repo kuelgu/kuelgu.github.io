@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>kuelgu's github</title>
+  <id>http://kuelgu.github.io</id>
+  <link href="http://kuelgu.github.io" />
+  <link href="http://kuelgu.github.io/atom.xml" rel="self" />
+  <updated>2015-10-25T12:47:02+09:00</updated>
+  <rights>Copyright 2014, kuelgu@github.com</rights>
+  <author>
+    <name>kuelgu@github.com</name>
+  </author>
+  
+    <entry>
+      <title>うちのモデリング環境</title>
+      <link href="http://kuelgu.github.io/2015/10/23/shade/" />
+      <summary type="html">&lt;h1 id=&quot;section&quot;&gt;うちのモデリング環境&lt;/h1&gt;
+
+&lt;p&gt;実はShade12.0（ちょっと古い）がうちのPCには入っております。時々しか使ってないので操作方法忘れがちですが。。。
+趣味のモデリング再開するにあたってBlenderかShadeか悩んだのだけれど，Shadeで再開しつつ，
+時々Blenderで確認する方向性でいこうかと考えていたり。&lt;/p&gt;
+
+&lt;p&gt;というのも，互換性の問題であっちでは見れるけどこっちでは壊れてたり，
+ってこともわりとあるあるなので（単にスキル不足という話もあるけど）まあ，そういうのも
+こみこみでちょこちょこ補正しながらやれる範囲でやっていこうかという方向性。
+やる事山積みで楽しい。&lt;/p&gt;
+
+&lt;p&gt;多分blender一本でやれれば一番いいんだろうけど，なんかお金払って買ったShadeがきえゆくのは
+悲しいじゃないかー（貧乏性）&lt;/p&gt;
+</summary>
+      <id>http://kuelgu.github.io/2015/10/23/shade/</id>
+      <updated>2015-10-23T00:00:00+09:00</updated>
+      <author>
+        <name>kuelgu@github.com</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>Cardboard Unity SDK &amp; ハコスコ &amp; あいぽん</title>
+      <link href="http://kuelgu.github.io/2015/10/18/cardboard/" />
+      <summary type="html">&lt;h1 id=&quot;cardboard&quot;&gt;Cardboardとハコスコとあいぽんで遊ぶ&lt;/h1&gt;
+
+&lt;p&gt;なんだかんだで結局休みにしてしまったのでキャンセルしてしまった
+unrealフェスの実況ツイートなんかを横目に見ながら，届いたハコスコと
+Cardboardで遊んで見る。&lt;/p&gt;
+
+&lt;h2 id=&quot;demo&quot;&gt;demoからこつこつと&lt;/h2&gt;
+
+&lt;p&gt;https://developers.google.com/cardboard/unity/guide?hl=ja&lt;/p&gt;
+
+&lt;p&gt;ここら参考に環境構築も兼ねてデモアプリの構築から入ってみた。
+とりあえずの目標は自作のモデルを使用して，２眼で立体視できるところまで。
+ちなみにunityもxcodeもちょこっと触った程度の知識しかないので変な事やってる
+可能性もあり。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;リンカのエラー&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;
+ld: &#39;/Users/***/***/***/Fabric.framework/Fabric(FABObfuscator.o)&#39; does not contain bitcode. You must rebuild it with bitcode enabled (Xcode setting ENABLE_BITCODE), obtain an updated library from the vendor, or disable bitcode for this target. for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Xcodeでビルドした際にでたエラー。Build SettingsからAllを選択してENABLE_BITCODEで検索。
+YESからNOに変更したらビルドできた。&lt;/p&gt;
+
+&lt;p&gt;理由はこのへん。ちゃんとは読んでない。&lt;/p&gt;
+
+&lt;p&gt;http://qiita.com/Takumi_Mori/items/ace01198c43c8bac6df0&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;process-launch-failed-security&quot;&gt;process launch failed: Security&lt;/h3&gt;
+
+&lt;p&gt;XcodeでRunした時に発生。
+iPhoneの設定→一般→プロファイル
+から該当のプロファイルを選択して，「信頼する」をタップすることで
+実行可能になる。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;そんなこんなで&lt;/h3&gt;
+
+&lt;p&gt;実機表示はできた&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/IMG_1868.PNG&quot; alt=&quot;demo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;とりあえずここまで。モデル作んないと続きができないので次はモデル作成をば。&lt;/p&gt;
+</summary>
+      <id>http://kuelgu.github.io/2015/10/18/cardboard/</id>
+      <updated>2015-10-18T00:00:00+09:00</updated>
+      <author>
+        <name>kuelgu@github.com</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>DK2</title>
+      <link href="http://kuelgu.github.io/2015/10/09/dk2/" />
+      <summary type="html">&lt;h1 id=&quot;section&quot;&gt;買おうかとおもったけど。。&lt;/h1&gt;
+
+&lt;p&gt;買おうかと思ってたけど製品版の予定もあるし，どうしようかな。開発してる時間はそんなになさそうだしなあ。。&lt;/p&gt;
+</summary>
+      <id>http://kuelgu.github.io/2015/10/09/dk2/</id>
+      <updated>2015-10-09T00:00:00+09:00</updated>
+      <author>
+        <name>kuelgu@github.com</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>Microsoft Surface Book</title>
+      <link href="http://kuelgu.github.io/2015/10/07/surface/" />
+      <summary type="html">&lt;h1 id=&quot;section&quot;&gt;すごい熱&lt;/h1&gt;
+
+&lt;p&gt;Surface Book, アツいですな。ものすごい話題になりっぷり。たまたまOcullusに興味持ち始めた時期がかぶったのもあって，よい情報をゲットできてる気がする。
+タブレットPCをずっと何にするか決めかねてたんだけど，これでほぼ決まりかな。まあ，これかっちゃうとMacbook Airの出番が減りそうな気も若干してはいるけど，そもそも目的が違うから多分大丈夫？&lt;/p&gt;
+</summary>
+      <id>http://kuelgu.github.io/2015/10/07/surface/</id>
+      <updated>2015-10-07T00:00:00+09:00</updated>
+      <author>
+        <name>kuelgu@github.com</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>jekyllのインストール</title>
+      <link href="http://kuelgu.github.io/2015/10/06/jekyll/" />
+      <summary type="html">&lt;h1 id=&quot;section&quot;&gt;日が変わった&lt;/h1&gt;
+
+&lt;p&gt;普段ruby使わないマンだけどjekyll使うためだけにrubyのアップデートから始まり，yajlいれてjekyllインストールしてたらいつの間にか日が変わってた。。&lt;/p&gt;
+
+</summary>
+      <id>http://kuelgu.github.io/2015/10/06/jekyll/</id>
+      <updated>2015-10-06T00:00:00+09:00</updated>
+      <author>
+        <name>kuelgu@github.com</name>
+      </author>
+    </entry>
+  
+    <entry>
+      <title>unrealのイベント</title>
+      <link href="http://kuelgu.github.io/2015/10/05/unreal/" />
+      <summary type="html">&lt;h1 id=&quot;section&quot;&gt;繰り上がり&lt;/h1&gt;
+
+&lt;p&gt;申し込んだ時は１０００人越えだったけどどうせ繰り上がるだろwと思ってたら案の定夜には繰り上がってた。HMDであそんでくるでー&lt;/p&gt;
+
+</summary>
+      <id>http://kuelgu.github.io/2015/10/05/unreal/</id>
+      <updated>2015-10-05T00:00:00+09:00</updated>
+      <author>
+        <name>kuelgu@github.com</name>
+      </author>
+    </entry>
+  
+</feed>

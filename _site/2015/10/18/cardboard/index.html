@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>kuelgu's github - kuelgu's github</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="kuelgu's github">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="off-canvas">
+      <figure class="avatar">
+        <img src="/assets/img/avatar.jpg" alt="Picture" title="That's me, kuelgu@github.com.">
+      </figure>
+      <div class="bio">
+          <h1>Hi, I'm kuelgu@github.com.</h1>
+          <p>モデリング，VR/AR技術に興味があります。最近はハコスコかってcardboard-unity sdkでちまちま遊んでます。</p>
+      </div>
+      <nav>
+        <h6>Follow me on</h6>
+        <ul>
+          
+          <li><a target="_blank" href="https://twitter.com/kuelgu1">Twitter</a></li>
+          
+          
+          <li><a target="_blank" href="https://github.com/kuelgu">Github</a></li>
+          
+          
+          
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="site-wrapper">
+
+      <header>
+        <div class="h-wrap">
+          <h1 class="title"><a href="/" title="Back to Homepage">kuelgu's github</a></h1>
+          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+        </div>
+      </header>
+
+      <main>
+        <section class="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2015-10-18T00:00:00+09:00" itemprop="datePublished">
+          18 October 2015
+        </time>
+      </h5>
+    </div>
+    <h1 class="page-title" itemprop="name headline">Cardboard Unity SDK & ハコスコ & あいぽん</h1>
+    <div itemprop="articleBody">
+      <h1 id="cardboard">Cardboardとハコスコとあいぽんで遊ぶ</h1>
+
+<p>なんだかんだで結局休みにしてしまったのでキャンセルしてしまった
+unrealフェスの実況ツイートなんかを横目に見ながら，届いたハコスコと
+Cardboardで遊んで見る。</p>
+
+<h2 id="demo">demoからこつこつと</h2>
+
+<p>https://developers.google.com/cardboard/unity/guide?hl=ja</p>
+
+<p>ここら参考に環境構築も兼ねてデモアプリの構築から入ってみた。
+とりあえずの目標は自作のモデルを使用して，２眼で立体視できるところまで。
+ちなみにunityもxcodeもちょこっと触った程度の知識しかないので変な事やってる
+可能性もあり。</p>
+
+<hr />
+
+<h3 id="section">リンカのエラー</h3>
+
+<p><code>
+ld: '/Users/***/***/***/Fabric.framework/Fabric(FABObfuscator.o)' does not contain bitcode. You must rebuild it with bitcode enabled (Xcode setting ENABLE_BITCODE), obtain an updated library from the vendor, or disable bitcode for this target. for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+</code></p>
+
+<p>Xcodeでビルドした際にでたエラー。Build SettingsからAllを選択してENABLE_BITCODEで検索。
+YESからNOに変更したらビルドできた。</p>
+
+<p>理由はこのへん。ちゃんとは読んでない。</p>
+
+<p>http://qiita.com/Takumi_Mori/items/ace01198c43c8bac6df0</p>
+
+<hr />
+
+<h3 id="process-launch-failed-security">process launch failed: Security</h3>
+
+<p>XcodeでRunした時に発生。
+iPhoneの設定→一般→プロファイル
+から該当のプロファイルを選択して，「信頼する」をタップすることで
+実行可能になる。</p>
+
+<hr />
+
+<h3 id="section-1">そんなこんなで</h3>
+
+<p>実機表示はできた</p>
+
+<p><img src="/assets/images/IMG_1868.PNG" alt="demo" /></p>
+
+<p>とりあえずここまで。モデル作んないと続きができないので次はモデル作成をば。</p>
+
+    </div>
+    <div class="feat share">
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+    </div>
+    
+      <a rel="next" href="/2015/10/23/shade/" id="next">
+        <span class="nav-title nav-title-next">newer</span> &rarr;
+      </a>
+    
+    
+      <a rel="prev" href="/2015/10/09/dk2/" id="prev">
+        &larr; <span class="nav-title nav-title-prev">older</span>
+      </a>
+    
+  </article>
+</section>
+
+      </main>
+
+      <footer>
+        <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; kuelgu@github.com</small>
+      </footer>
+
+    </div>
+    
+
+    <script src="/js/main.js"></script>
+    
+    
+
+  </body>
+</html>
