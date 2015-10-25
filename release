@@ -1,0 +1,6 @@
+#!/bin/sh
+
+jekyll b
+git add -A
+git commit -a -m "new diary"
+git push
