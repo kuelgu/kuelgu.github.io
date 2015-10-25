@@ -9,12 +9,15 @@
 	
 	<div class="contents">
 		<div>
-		{{ content }}
+		{{content}}
 		</div>
 	</div>
 	<div class="sidebar">
 		<p><a href="/">TOP</a></p>
 		<p><a href="https://github.com/kuelgu/">repo</a></p>
+		{% for post in content %}
+			{{ post }}
+		{% endfor %}
 	</div>
 </body>
 

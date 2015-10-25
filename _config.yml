@@ -1,8 +1,41 @@
-permalink: /:categories/:year-:month-:day/:title
-author:
-    name: kuelgu
-    email: kuelgu@gmail.com
+# Title of your blog; shows in the header
+name: "kuelgu's github"
+
+# Description of your content (will only be used on Google Search)
+description: "kuelgu's github"
+
+# Your name. Will show in your footer + sidebar
+author: "kuelgu@github.com"
+
+url: "http://kuelgu.github.io"
+#baseurl: "/hikari-for-jekyll"
+
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
+author-bio: "モデリング，VR/AR技術に興味があります。最近はハコスコかってcardboard-unity sdkでちまちま遊んでます。"
+
+# Social Accounts (mine, as placeholders)
+
+twitter: kuelgu1
+github: kuelgu
+#dribbble: m3xm
+#instagram: m3xm
+
+# Google Analytics (you may want to changes these with yours or even delete :)
+
+#ga_domain: kuelgu.github.io
+ga_tracking_id: UA-69264036-1
+
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
 
 markdown: kramdown
-auto: true
-server: true
+permalink: pretty
+highlighter: pygments
+
+paginate: 10
+paginate_path: "/page/:num"
+
+# SCSS
+
+sass:
+  sass_dir: _scss
+  style: :compressed
