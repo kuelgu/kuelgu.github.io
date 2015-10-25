@@ -2,7 +2,6 @@
 layout: post
 title: Cardboard Unity SDK & ハコスコ & あいぽん
 ---
-# Cardboardとハコスコとあいぽんで遊ぶ
 
 なんだかんだで結局休みにしてしまったのでキャンセルしてしまった
 unrealフェスの実況ツイートなんかを横目に見ながら，届いたハコスコと
