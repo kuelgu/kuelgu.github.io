@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>kuelgu's github - hobby site | vr,ar,unity,c#,shade,blender,hakosoko...</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="hobby site | vr,ar,unity,c#,shade,blender,hakosoko...">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="off-canvas">
+      <figure class="avatar">
+        <img src="/assets/img/avatar.jpg" alt="Picture" title="so cute! kuelgu@gmail.com.">
+      </figure>
+      <div class="bio">
+          <h1>kuelgu@gmail.com.</h1>
+          <p>モデリング，VR/AR技術に興味があります。最近はハコスコかってcardboard-unity sdkでちまちま遊んでます。</p>
+      </div>
+      <nav>
+        <h6>Follow me on</h6>
+        <ul>
+          
+          <li><a target="_blank" href="https://twitter.com/kuelgu1">Twitter</a></li>
+          
+          
+          <li><a target="_blank" href="https://github.com/kuelgu">Github</a></li>
+          
+          
+          
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="site-wrapper">
+
+      <header>
+        <div class="h-wrap">
+          <h1 class="title"><a href="/" title="Back to Homepage">kuelgu's github</a></h1>
+          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
+        </div>
+      </header>
+
+      <main>
+        <section class="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2015-11-07T00:00:00+09:00" itemprop="datePublished">
+          07 November 2015
+        </time>
+      </h5>
+    </div>
+    <h1 class="page-title" itemprop="name headline">memo</h1>
+    <div itemprop="articleBody">
+      <h1 id="section">負荷対策</h1>
+
+<ol>
+  <li>1頂点に影響を与えるボーンの数は最大４つ(1,2,4)</li>
+  <li>Edit-&gt;Project-&gt;Settings-&gt;Quality-&gt;InspectorタブのQualitySettings [BlendWeights]で制限設定が可能</li>
+  <li>GameタブのStatsで確認できるのはSetPass calls(負荷)，FPS</li>
+  <li>オブジェクトが大量にある場合はattachしておくと負荷軽減になる</li>
+  <li>ボーンもオブジェクトに入るがSetPass Callsでは確認できない</li>
+  <li>マテリアル数も負荷に影響。極力わけずに作るとよい</li>
+  <li>shaderも負荷に影響。影響するライト数を減らすことで負荷軽減も可能</li>
+  <li>mobile bumped speculerは１つのライトしか影響をうけない</li>
+</ol>
+
+<h1 id="unity">unityへインポート可能なモデルとインポート方法</h1>
+
+<ol>
+  <li>三角面を確認しながら5000ポリゴン以下が目安（Blenderの情報ヘッダで確認）</li>
+  <li>ポリゴン，ノード（ボーン・ロケータのみ）。ライト，カメラ，スプラインは
+持ち込み不可</li>
+  <li>アニメーションを持ち込む場合は別のノードに焼き付け（コピー）する必要がある</li>
+  <li>
+    <p>3Dビューのツールシェルフ，ウェイトツールの「合計を制限」で頂点の上にのるウェイトを制限で可能</p>
+  </li>
+  <li>アーマチュアを選択してNキー→X-90°回転してそのままCtrl+Aから回転を適用
+アーマチュアにX+90°Z+180°の回転をかける。ボディメッシュを選択し，Ctrl+Aの適用メニューの回転値を全部０にする。最終的にキャラクターが奥を向かって立っていて，アーマチュアオブジェクトの回転値がX:90° Y:0°
+Z:180°，ボディオブジェクト，衣装１，衣装オブジェクトの回転値が全て０。以上の状態でエクスポートする</li>
+</ol>
+
+    </div>
+    <div class="feat share">
+      <a href="http://twitter.com/share" class="popup" data-url='/2015/11/07/book/' data-text=' / memo' data-via='@kuelgu'>
+        <span class="icon-twitter"></span>
+      </a>
+    </div>
+    
+    
+      <a rel="prev" href="/2015/10/23/shade/" id="prev">
+        &larr; <span class="nav-title nav-title-prev">older</span>
+      </a>
+    
+  </article>
+</section>
+
+      </main>
+
+      <footer>
+        <small>&copy; kuelgu@gmail.com</small>
+      </footer>
+
+    </div>
+    
+
+    <script src="/js/main.js"></script>
+    
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-69264036-1', 'kuelgu.github.io');
+        ga('send', 'pageview');
+      </script>
+    
+
+  </body>
+</html>
