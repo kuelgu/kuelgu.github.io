@@ -4,11 +4,49 @@
   <id>http://kuelgu.github.io</id>
   <link href="http://kuelgu.github.io" />
   <link href="http://kuelgu.github.io/atom.xml" rel="self" />
-  <updated>2015-11-02T17:54:35+09:00</updated>
+  <updated>2015-11-14T21:42:57+09:00</updated>
   <rights>Copyright 2014, kuelgu@gmail.com</rights>
   <author>
     <name>kuelgu@gmail.com</name>
   </author>
+  
+    <entry>
+      <title>memo</title>
+      <link href="http://kuelgu.github.io/2015/11/07/book/" />
+      <summary type="html">&lt;h1 id=&quot;section&quot;&gt;負荷対策&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;1頂点に影響を与えるボーンの数は最大４つ(1,2,4)&lt;/li&gt;
+  &lt;li&gt;Edit-&amp;gt;Project-&amp;gt;Settings-&amp;gt;Quality-&amp;gt;InspectorタブのQualitySettings [BlendWeights]で制限設定が可能&lt;/li&gt;
+  &lt;li&gt;GameタブのStatsで確認できるのはSetPass calls(負荷)，FPS&lt;/li&gt;
+  &lt;li&gt;オブジェクトが大量にある場合はattachしておくと負荷軽減になる&lt;/li&gt;
+  &lt;li&gt;ボーンもオブジェクトに入るがSetPass Callsでは確認できない&lt;/li&gt;
+  &lt;li&gt;マテリアル数も負荷に影響。極力わけずに作るとよい&lt;/li&gt;
+  &lt;li&gt;shaderも負荷に影響。影響するライト数を減らすことで負荷軽減も可能&lt;/li&gt;
+  &lt;li&gt;mobile bumped speculerは１つのライトしか影響をうけない&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;unity&quot;&gt;unityへインポート可能なモデルとインポート方法&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;三角面を確認しながら5000ポリゴン以下が目安（Blenderの情報ヘッダで確認）&lt;/li&gt;
+  &lt;li&gt;ポリゴン，ノード（ボーン・ロケータのみ）。ライト，カメラ，スプラインは
+持ち込み不可&lt;/li&gt;
+  &lt;li&gt;アニメーションを持ち込む場合は別のノードに焼き付け（コピー）する必要がある&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;3Dビューのツールシェルフ，ウェイトツールの「合計を制限」で頂点の上にのるウェイトを制限で可能&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;アーマチュアを選択してNキー→X-90°回転してそのままCtrl+Aから回転を適用
+アーマチュアにX+90°Z+180°の回転をかける。ボディメッシュを選択し，Ctrl+Aの適用メニューの回転値を全部０にする。最終的にキャラクターが奥を向かって立っていて，アーマチュアオブジェクトの回転値がX:90° Y:0°
+Z:180°，ボディオブジェクト，衣装１，衣装オブジェクトの回転値が全て０。以上の状態でエクスポートする&lt;/li&gt;
+&lt;/ol&gt;
+</summary>
+      <id>http://kuelgu.github.io/2015/11/07/book/</id>
+      <updated>2015-11-07T00:00:00+09:00</updated>
+      <author>
+        <name>kuelgu@gmail.com</name>
+      </author>
+    </entry>
   
     <entry>
       <title>うちのモデリング環境</title>
