@@ -714,6 +714,16 @@
     ]
   },
   {
+
+    "name": "桜守歌織",
+    "yomi": "さくらもりかおり",
+    "id": "kaori",
+    "type": "vo",
+    "images": [
+      "images/kaori/kaori0.png"
+    ]
+  },
+  {
     "name": "星宮いちご",
     "yomi": "ほしみやいちご",
     "id": "ichigo",
