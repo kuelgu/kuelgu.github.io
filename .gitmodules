@@ -1,0 +1,3 @@
+[submodule "ohanashi"]
+	path = ohanashi
+	url = http://github.com/kuelgu/ohanashi
