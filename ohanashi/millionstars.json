@@ -710,7 +710,12 @@
     "id": "nannan",
     "type": "vi",
     "images": [
-      "images/nannan/tsumu0.png"
+      "images/nannan/tsumu0.png",
+      "images/nannan/tsumu1.png",
+      "images/nannan/tsumu2.png",
+      "images/nannan/tsumu3.png",
+      "images/nannan/tsumu4.png",
+      "images/nannan/tsumu5.png"
     ]
   },
   {
