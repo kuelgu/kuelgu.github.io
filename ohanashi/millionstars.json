@@ -725,7 +725,13 @@
     "id": "kaori",
     "type": "vo",
     "images": [
-      "images/kaori/kaori0.png"
+      "images/kaori/kaori0.png",
+      "images/kaori/kaori1.png",
+      "images/kaori/kaori2.png",
+      "images/kaori/kaori3.png",
+      "images/kaori/kaori4.png",
+      "images/kaori/kaori5.png",
+      "images/kaori/kaori6.png"
     ]
   },
   {
